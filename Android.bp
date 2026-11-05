@@ -454,7 +454,7 @@ android_library {
         "PlatformComposeSceneTransitionLayout",
     ],
     manifest: "quickstep/AndroidManifest.xml",
-    min_sdk_version: "current",
+    min_sdk_version: min_launcher3_sdk_version,
     lint: {
         disabled_checks: ["MissingClass"],
     },
@@ -553,7 +553,7 @@ android_library {
         "androidx.room_room-compiler-plugin",
         "dagger2-compiler",
     ],
-    min_sdk_version: "current",
+    min_sdk_version: min_launcher3_sdk_version,
     // TODO(b/319712088): re-enable use_resource_processor
     use_resource_processor: false,
     kotlincflags: [
