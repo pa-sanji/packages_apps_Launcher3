@@ -576,7 +576,9 @@ android_app {
     },
 
     platform_apis: true,
-    min_sdk_version: "current",
+    // Match Launcher3ResLib; "current" resolves to the Baklava codename, which
+    // the manifest merger cannot compare against the library's numeric SDK 36.
+    min_sdk_version: min_launcher3_sdk_version,
     target_sdk_version: "current",
 
     certificate: "platform",
